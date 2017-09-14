@@ -1,0 +1,21 @@
+{
+    "name": "rapidwebltd/php-countries",
+    "description": "PHP library providing elegant syntax to country data",
+    "type": "library",
+    "require": {
+        "php": "^7.0",
+        "mledoze/countries": "^1.8"
+    },
+    "license": "LGPL3",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan.hall@rapidweb.biz"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RapidWeb\\Countries\\": "src/"
+        }
+    }
+}
