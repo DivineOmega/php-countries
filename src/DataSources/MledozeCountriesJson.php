@@ -46,7 +46,7 @@ class MledozeCountriesJson implements DataSourceInterface
             $country->languageCodes = array_keys((array) $countryDataItem->languages);
             $country->currencyCodes = $countryDataItem->currency;
             $country->callingCodes = $countryDataItem->callingCode;
-            $country->captial = $countryDataItem->capital;
+            $country->capital = $countryDataItem->capital;
             $country->region = $countryDataItem->region;
             $country->subregion = $countryDataItem->subregion;
             $country->latitude = isset($countryDataItem->latlng[0]) ? $countryDataItem->latlng[0] : null;

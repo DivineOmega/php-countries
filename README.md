@@ -75,7 +75,7 @@ object(RapidWeb\Countries\Country)#4869 (16) {
     [0]=>
     string(2) "44"
   }
-  ["captial"]=>
+  ["capital"]=>
   string(6) "London"
   ["region"]=>
   string(6) "Europe"

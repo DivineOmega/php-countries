@@ -14,7 +14,7 @@ class Country
     public $languageCodes;
     public $currencyCodes;
     public $callingCodes;
-    public $captial;
+    public $capital;
     public $region;
     public $subregion;
     public $latitude;
