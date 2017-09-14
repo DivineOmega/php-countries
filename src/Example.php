@@ -13,3 +13,7 @@ var_dump($countries->getByName('United Kingdom'));
 var_dump($countries->getByIsoCode('USA'));
 
 var_dump($countries->getByLanguage('German'));
+
+foreach($countries->all() as $country) {
+    var_dump($country->name);
+}

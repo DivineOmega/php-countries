@@ -22,7 +22,13 @@ class Countries
 
     public function all()
     {
-        return $this->dataSource->all();
+        $countries = $this->dataSource->all();
+
+        usort($countries, function($a, $b) {
+            return strcmp($a->name, $b->name);
+        });
+
+        return $countries;
     }
 
     public function getByName($name)
