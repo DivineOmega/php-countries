@@ -93,7 +93,7 @@ object(RapidWeb\Countries\Country)#4869 (16) {
 
 ### Retrieving country by ISO 3166-1 code
 
-You can get the data for a country by its ISO 3166-1 code. The 2 character, 3 charcter and numeric variations are all accepted.
+You can get the data for a country by its ISO 3166-1 code. The 2 character, 3 character and numeric variations are all accepted.
 
 ```php
 var_dump($countries->getByIsoCode('USA'));
