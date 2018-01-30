@@ -6,7 +6,7 @@
         "php": "^7.0",
         "mledoze/countries": "^1.8"
     },
-    "license": " LGPL-3.0-only",
+    "license": "LGPL-3.0-only",
     "authors": [
         {
             "name": "Jordan Hall",
