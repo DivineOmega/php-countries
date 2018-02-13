@@ -2,7 +2,7 @@
 
 namespace RapidWeb\Countries\Interfaces;
 
-interface DataSourceInterface 
+interface DataSourceInterface
 {
     public function all();
 }

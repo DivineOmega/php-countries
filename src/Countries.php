@@ -2,9 +2,8 @@
 
 namespace RapidWeb\Countries;
 
-use RapidWeb\Countries\Country;
-use RapidWeb\Countries\Interfaces\DataSourceInterface;
 use RapidWeb\Countries\DataSources\MledozeCountriesJson;
+use RapidWeb\Countries\Interfaces\DataSourceInterface;
 
 class Countries
 {
@@ -12,7 +11,7 @@ class Countries
 
     public function __construct()
     {
-        $this->setDataSource(new MledozeCountriesJson);
+        $this->setDataSource(new MledozeCountriesJson());
     }
 
     public function setDataSource(DataSourceInterface $dataSource)
@@ -24,7 +23,7 @@ class Countries
     {
         $countries = $this->dataSource->all();
 
-        usort($countries, function($a, $b) {
+        usort($countries, function ($a, $b) {
             return strcmp($a->name, $b->name);
         });
 
@@ -33,7 +32,7 @@ class Countries
 
     public function getByName($name)
     {
-        foreach($this->all() as $country) {
+        foreach ($this->all() as $country) {
             if ($country->name == $name || $country->officialName == $name) {
                 return $country;
             }
@@ -42,7 +41,7 @@ class Countries
 
     public function getByIsoCode($code)
     {
-        foreach($this->all() as $country) {
+        foreach ($this->all() as $country) {
             if ($country->isoCodeAlpha2 == $code || $country->isoCodeAlpha3 == $code || $country->isoCodeNumeric == $code) {
                 return $country;
             }
@@ -53,13 +52,13 @@ class Countries
     {
         $countries = [];
 
-        foreach($this->all() as $country) {
-            foreach($country->languages as $countryLanguage) {
+        foreach ($this->all() as $country) {
+            foreach ($country->languages as $countryLanguage) {
                 if ($countryLanguage == $language) {
                     $countries[] = $country;
                 }
             }
-            foreach($country->languageCodes as $countryLanguageCode) {
+            foreach ($country->languageCodes as $countryLanguageCode) {
                 if ($countryLanguageCode == $language) {
                     $countries[] = $country;
                 }
