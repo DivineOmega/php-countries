@@ -1,4 +1,7 @@
 # PHP Countries
+
+[![StyleCI](https://styleci.io/repos/103522832/shield?branch=master)](https://styleci.io/repos/103522832)
+
 PHP Countries is a library that provides an elegant syntax to country data.
 
 ## Installation
