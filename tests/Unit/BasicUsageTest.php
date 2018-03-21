@@ -10,7 +10,7 @@ final class BasicUsageTest extends TestCase
     {
         $countries = (new Countries())->all();
 
-        $this->assertEquals(248, count($countries));
+        $this->assertGreaterThanOrEqual(248, count($countries));
 
         foreach ($countries as $country) {
             $this->assertEquals(Country::class, get_class($country));
