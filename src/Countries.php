@@ -30,7 +30,7 @@ class Countries
         return $countries;
     }
 
-    public function getByName($name)
+    public function getByName(string $name)
     {
         foreach ($this->all() as $country) {
             if ($country->name == $name || $country->officialName == $name) {
@@ -39,7 +39,7 @@ class Countries
         }
     }
 
-    public function getByIsoCode($code)
+    public function getByIsoCode(string $code)
     {
         foreach ($this->all() as $country) {
             if ($country->isoCodeAlpha2 == $code || $country->isoCodeAlpha3 == $code || $country->isoCodeNumeric == $code) {
@@ -48,7 +48,7 @@ class Countries
         }
     }
 
-    public function getByLanguage($language)
+    public function getByLanguage(string $language)
     {
         $countries = [];
 
