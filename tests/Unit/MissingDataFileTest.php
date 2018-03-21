@@ -26,5 +26,4 @@ final class MissingDataFileTest extends TestCase
         $this->expectException(\Exception::class);
         $countries = (new Countries())->all();
     }
-
 }
