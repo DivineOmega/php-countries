@@ -12,7 +12,7 @@ final class BasicUsageTest extends TestCase
 
         $this->assertEquals(248, count($countries));
 
-        foreach($countries as $country) {
+        foreach ($countries as $country) {
             $this->assertEquals(Country::class, get_class($country));
         }
     }
@@ -47,10 +47,9 @@ final class BasicUsageTest extends TestCase
 
         $this->assertEquals(5, count($countries));
 
-        foreach($countries as $country) {
+        foreach ($countries as $country) {
             $this->assertEquals(Country::class, get_class($country));
             $this->assertTrue(in_array('German', $country->languages));
         }
     }
-
 }
