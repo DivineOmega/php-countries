@@ -1,5 +1,7 @@
 # PHP Countries
 
+[![Build Status](https://travis-ci.org/rapidwebltd/php-countries.svg?branch=master)](https://travis-ci.org/rapidwebltd/php-countries)
+[![Coverage Status](https://coveralls.io/repos/github/rapidwebltd/php-countries/badge.svg?branch=master)](https://coveralls.io/github/rapidwebltd/php-countries?branch=master)
 [![StyleCI](https://styleci.io/repos/103522832/shield?branch=master)](https://styleci.io/repos/103522832)
 
 PHP Countries is a library that provides an elegant syntax to country data.
