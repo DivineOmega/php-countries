@@ -1,10 +1,10 @@
 <?php
 
-namespace RapidWeb\Countries\DataSources;
+namespace DivineOmega\Countries\DataSources;
 
 use Exception;
-use RapidWeb\Countries\Country;
-use RapidWeb\Countries\Interfaces\DataSourceInterface;
+use DivineOmega\Countries\Country;
+use DivineOmega\Countries\Interfaces\DataSourceInterface;
 
 class MledozeCountriesJson implements DataSourceInterface
 {

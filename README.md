@@ -1,7 +1,7 @@
 # PHP Countries
 
-[![Build Status](https://travis-ci.org/rapidwebltd/php-countries.svg?branch=master)](https://travis-ci.org/rapidwebltd/php-countries)
-[![Coverage Status](https://coveralls.io/repos/github/rapidwebltd/php-countries/badge.svg?branch=master)](https://coveralls.io/github/rapidwebltd/php-countries?branch=master)
+[![Build Status](https://travis-ci.org/divineomega/php-countries.svg?branch=master)](https://travis-ci.org/divineomega/php-countries)
+[![Coverage Status](https://coveralls.io/repos/github/divineomega/php-countries/badge.svg?branch=master)](https://coveralls.io/github/divineomega/php-countries?branch=master)
 [![StyleCI](https://styleci.io/repos/103522832/shield?branch=master)](https://styleci.io/repos/103522832)
 
 PHP Countries is a library that provides an elegant syntax to country data.
@@ -11,7 +11,7 @@ PHP Countries is a library that provides an elegant syntax to country data.
 You can install PHP Countries via Composer, as follows.
 
 ```
-composer require rapidwebltd/php-countries
+composer require divineomega/php-countries
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ composer require rapidwebltd/php-countries
 To use PHP Countries, you must create a new `Countries` object.
 
 ```php
-use RapidWeb\Countries\Countries;
+use DivineOmega\Countries\Countries;
 
 $countries = new Countries;
 ```
@@ -44,7 +44,7 @@ Country details can be retrieved from the country's official or common name.
 var_dump($countries->getByName('United Kingdom'));
 
 /* 
-object(RapidWeb\Countries\Country)#4869 (16) {
+object(DivineOmega\Countries\Country)#4869 (16) {
   ["name"]=>
   string(14) "United Kingdom"
   ["officialName"]=>
@@ -104,7 +104,7 @@ You can get the data for a country by its ISO 3166-1 code. The 2 character, 3 ch
 var_dump($countries->getByIsoCode('USA'));
 
 /*
-object(RapidWeb\Countries\Country)#4693 (16) {
+object(DivineOmega\Countries\Country)#4693 (16) {
   ["name"]=>
   string(13) "United States"
   ["officialName"]=>
@@ -124,14 +124,14 @@ var_dump($countries->getByLanguage('German'));
 /*
 array(5) {
   [0]=>
-  object(RapidWeb\Countries\Country)#4913 (16) {
+  object(DivineOmega\Countries\Country)#4913 (16) {
     ["name"]=>
     string(7) "Belgium"
     ["officialName"]=>
     // etc...
   }
   [1]=>
-  object(RapidWeb\Countries\Country)#4883 (16) {
+  object(DivineOmega\Countries\Country)#4883 (16) {
     ["name"]=>
     string(7) "Germany"
     ["officialName"]=>
@@ -139,7 +139,7 @@ array(5) {
     // etc...
   }
   [2]=>
-  object(RapidWeb\Countries\Country)#4826 (16) {
+  object(DivineOmega\Countries\Country)#4826 (16) {
     ["name"]=>
     string(13) "Liechtenstein"
     ["officialName"]=>
@@ -147,7 +147,7 @@ array(5) {
     // etc...
   }
   [3]=>
-  object(RapidWeb\Countries\Country)#4808 (16) {
+  object(DivineOmega\Countries\Country)#4808 (16) {
     ["name"]=>
     string(10) "Luxembourg"
     ["officialName"]=>
@@ -155,7 +155,7 @@ array(5) {
     // etc...
   }
   [4]=>
-  object(RapidWeb\Countries\Country)#4871 (16) {
+  object(DivineOmega\Countries\Country)#4871 (16) {
     ["name"]=>
     string(7) "Namibia"
     ["officialName"]=>

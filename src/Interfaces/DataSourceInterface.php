@@ -1,6 +1,6 @@
 <?php
 
-namespace RapidWeb\Countries\Interfaces;
+namespace DivineOmega\Countries\Interfaces;
 
 interface DataSourceInterface
 {

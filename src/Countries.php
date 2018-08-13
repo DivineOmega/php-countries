@@ -1,9 +1,9 @@
 <?php
 
-namespace RapidWeb\Countries;
+namespace DivineOmega\Countries;
 
-use RapidWeb\Countries\DataSources\MledozeCountriesJson;
-use RapidWeb\Countries\Interfaces\DataSourceInterface;
+use DivineOmega\Countries\DataSources\MledozeCountriesJson;
+use DivineOmega\Countries\Interfaces\DataSourceInterface;
 
 class Countries
 {

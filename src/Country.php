@@ -1,6 +1,6 @@
 <?php
 
-namespace RapidWeb\Countries;
+namespace DivineOmega\Countries;
 
 class Country
 {

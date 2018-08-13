@@ -1,5 +1,5 @@
 {
-    "name": "rapidwebltd/php-countries",
+    "name": "divineomega/php-countries",
     "description": "PHP Countries is a library that provides an elegant syntax to country data.",
     "type": "library",
     "require": {
@@ -14,12 +14,12 @@
     "authors": [
         {
             "name": "Jordan Hall",
-            "email": "jordan.hall@rapidweb.biz"
+            "email": "jordan@hall05.co.uk"
         }
     ],
     "autoload": {
         "psr-4": {
-            "RapidWeb\\Countries\\": "src/"
+            "DivineOmega\\Countries\\": "src/"
         }
     }
 }

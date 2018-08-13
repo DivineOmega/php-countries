@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use RapidWeb\Countries\Countries;
-use RapidWeb\Countries\Country;
+use DivineOmega\Countries\Countries;
+use DivineOmega\Countries\Country;
 
 final class BasicUsageTest extends TestCase
 {
