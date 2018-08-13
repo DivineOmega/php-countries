@@ -44,7 +44,7 @@ Country details can be retrieved from the country's official or common name.
 var_dump($countries->getByName('United Kingdom'));
 
 /* 
-object(DivineOmega\Countries\Country)#4869 (16) {
+object(DivineOmega\Countries\Country)#146 (17) {
   ["name"]=>
   string(14) "United Kingdom"
   ["officialName"]=>
@@ -82,6 +82,11 @@ object(DivineOmega\Countries\Country)#4869 (16) {
   }
   ["capital"]=>
   string(6) "London"
+  ["capitals"]=>
+  array(1) {
+    [0]=>
+    string(6) "London"
+  }
   ["region"]=>
   string(6) "Europe"
   ["subregion"]=>
