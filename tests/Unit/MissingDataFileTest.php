@@ -1,7 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use DivineOmega\Countries\Countries;
+use PHPUnit\Framework\TestCase;
 
 final class MissingDataFileTest extends TestCase
 {

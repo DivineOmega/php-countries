@@ -2,9 +2,9 @@
 
 namespace DivineOmega\Countries\DataSources;
 
-use Exception;
 use DivineOmega\Countries\Country;
 use DivineOmega\Countries\Interfaces\DataSourceInterface;
+use Exception;
 
 class MledozeCountriesJson implements DataSourceInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use DivineOmega\Countries\Countries;
 use DivineOmega\Countries\Country;
+use PHPUnit\Framework\TestCase;
 
 final class BasicUsageTest extends TestCase
 {
