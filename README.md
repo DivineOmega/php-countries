@@ -1,7 +1,7 @@
 # PHP Countries
 
 [![Build Status](https://travis-ci.org/divineomega/php-countries.svg?branch=master)](https://travis-ci.org/divineomega/php-countries)
-[![Coverage Status](https://coveralls.io/repos/github/divineomega/php-countries/badge.svg?branch=master)](https://coveralls.io/github/divineomega/php-countries?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/DivineOmega/php-countries/badge.svg?branch=master)](https://coveralls.io/github/DivineOmega/php-countries?branch=master)
 [![StyleCI](https://github.styleci.io/repos/144559506/shield?branch=master)](https://github.styleci.io/repos/144559506)
 
 PHP Countries is a library that provides an elegant syntax to country data.
