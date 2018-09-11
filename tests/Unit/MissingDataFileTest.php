@@ -24,6 +24,8 @@ final class MissingDataFileTest extends TestCase
     public function testRetrievingAllCountriesWithNoDataFile()
     {
         $this->expectException(\Exception::class);
+        $this->expectExceptionMessage('Unable to retrieve MledozeCountries JSON data file. Have you ran composer update?');
+
         $countries = (new Countries())->all();
     }
 }
