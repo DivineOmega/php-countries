@@ -13,7 +13,7 @@ final class BasicUsageTest extends TestCase
         $this->assertGreaterThanOrEqual(248, count($countries));
 
         foreach ($countries as $country) {
-            $this->assertEquals(Country::class, get_class($country));
+            $this->assertInstanceOf(Country::class, $country);
         }
     }
 
@@ -21,7 +21,7 @@ final class BasicUsageTest extends TestCase
     {
         $country = (new Countries())->getByName('United Kingdom');
 
-        $this->assertEquals(Country::class, get_class($country));
+        $this->assertInstanceOf(Country::class, $country);
         $this->assertEquals('GBR', $country->isoCodeAlpha3);
     }
 
@@ -29,14 +29,14 @@ final class BasicUsageTest extends TestCase
     {
         $country = (new Countries())->getByName('Unified Kingdom of Jordania');
 
-        $this->assertEquals(null, $country);
+        $this->assertNull($country);
     }
 
     public function testGetCountryByIsoCode3Char()
     {
         $country = (new Countries())->getByIsoCode('USA');
 
-        $this->assertEquals(Country::class, get_class($country));
+        $this->assertInstanceOf(Country::class, $country);
         $this->assertEquals('United States', $country->name);
     }
 
@@ -44,7 +44,7 @@ final class BasicUsageTest extends TestCase
     {
         $country = (new Countries())->getByIsoCode('US');
 
-        $this->assertEquals(Country::class, get_class($country));
+        $this->assertInstanceOf(Country::class, $country);
         $this->assertEquals('United States', $country->name);
     }
 
@@ -52,7 +52,7 @@ final class BasicUsageTest extends TestCase
     {
         $country = (new Countries())->getByIsoCode('UKJ');
 
-        $this->assertEquals(null, $country);
+        $this->assertNull($country);
     }
 
     public function testGetCountriesByLanguages()
@@ -62,8 +62,8 @@ final class BasicUsageTest extends TestCase
         $this->assertEquals(5, count($countries));
 
         foreach ($countries as $country) {
-            $this->assertEquals(Country::class, get_class($country));
-            $this->assertTrue(in_array('German', $country->languages));
+            $this->assertInstanceOf(Country::class, $country);
+            $this->assertContains('German', $country->languages);
         }
     }
 }
