@@ -1,6 +1,6 @@
 {
     "name": "divineomega/php-countries",
-    "description": "PHP Countries is a library that provides an elegant syntax to country data.",
+    "description": "🌍 PHP Countries is a library that provides an elegant syntax to country data.",
     "type": "library",
     "require": {
         "php": "^7.0",
