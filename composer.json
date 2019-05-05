@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^7.0",
-        "mledoze/countries": "^2.0"
+        "mledoze/countries": "dev-master#aadcf74a0239444ee946f6a53d10b973ff04f744"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5",
