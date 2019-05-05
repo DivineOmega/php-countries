@@ -13,8 +13,7 @@ class MledozeCountriesJson implements DataSourceInterface
     public function __construct()
     {
         $paths = [];
-        $paths[] = __DIR__.'/../../../../mledoze/countries/dist/countries.json';
-        $paths[] = __DIR__.'/../../vendor/mledoze/countries/dist/countries.json';
+        $paths[] = __DIR__.'/mledoze/countries/dist/countries.json';
 
         if (!$this->countryData) {
             foreach ($paths as $path) {

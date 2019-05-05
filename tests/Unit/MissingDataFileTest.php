@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 final class MissingDataFileTest extends TestCase
 {
-    private $dataFilePath = __DIR__.'/../../vendor/mledoze/countries/dist/countries.json';
+    private $dataFilePath = __DIR__.'/../../src/DataSources/mledoze/countries/dist/countries.json';
 
     protected function setUp()
     {
