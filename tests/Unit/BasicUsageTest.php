@@ -21,8 +21,6 @@ final class BasicUsageTest extends TestCase
     {
         $country = (new Countries())->getByName('United Kingdom');
 
-        var_dump($country); die;
-
         $this->assertInstanceOf(Country::class, $country);
         $this->assertEquals('GBR', $country->isoCodeAlpha3);
     }
