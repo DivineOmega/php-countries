@@ -98,6 +98,8 @@ object(DivineOmega\Countries\Country)#146 (17) {
   int(-2)
   ["areaInKilometres"]=>
   int(242900)
+  ["nationality"]=>
+    string(7) "British"
 }
 */
 ```

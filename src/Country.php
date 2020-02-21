@@ -21,4 +21,5 @@ class Country
     public $latitude;
     public $longitude;
     public $areaInKilometres;
+    public $nationality;
 }
