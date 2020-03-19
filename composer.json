@@ -3,10 +3,10 @@
     "description": "🌍 PHP Countries is a library that provides an elegant syntax to country data.",
     "type": "library",
     "require": {
-        "php": "^7.0"
+        "php": "^7.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5",
+        "phpunit/phpunit": "^7.0||^8.0",
         "php-coveralls/php-coveralls": "^2.0",
         "roave/security-advisories": "dev-master"
     },
@@ -24,7 +24,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DivineOmega\\Countries\\Tests\\": "tests/"
+            "DivineOmega\\Countries\\Tests\\": "tests/Unit/"
         }
     }
 }

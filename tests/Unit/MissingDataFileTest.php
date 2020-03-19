@@ -1,5 +1,7 @@
 <?php
 
+namespace DivineOmega\Countries\Tests;
+
 use DivineOmega\Countries\Countries;
 use PHPUnit\Framework\TestCase;
 
@@ -7,14 +9,14 @@ final class MissingDataFileTest extends TestCase
 {
     private $dataFilePath = __DIR__.'/../../src/DataSources/mledoze/countries/dist/countries.json';
 
-    protected function setUp()
+    protected function setUp(): void
     {
         if (file_exists($this->dataFilePath)) {
             rename($this->dataFilePath, $this->dataFilePath.'_tmp');
         }
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         if (file_exists($this->dataFilePath.'_tmp')) {
             rename($this->dataFilePath.'_tmp', $this->dataFilePath);
