@@ -1,5 +1,7 @@
 <?php
 
+namespace DivineOmega\Countries\Tests;
+
 use DivineOmega\Countries\Countries;
 use DivineOmega\Countries\Country;
 use PHPUnit\Framework\TestCase;
@@ -59,7 +61,7 @@ final class BasicUsageTest extends TestCase
     {
         $countries = (new Countries())->getByLanguage('German');
 
-        $this->assertEquals(5, count($countries));
+        $this->assertCount(5, $countries);
 
         foreach ($countries as $country) {
             $this->assertInstanceOf(Country::class, $country);
