@@ -1,6 +1,6 @@
 # 🌍 PHP Countries
 
-[![Build Status](https://travis-ci.org/DivineOmega/php-countries.svg?branch=master)](https://travis-ci.org/DivineOmega/php-countries)
+[![Build Status](https://travis-ci.com/DivineOmega/php-countries.svg?branch=master)](https://travis-ci.com/DivineOmega/php-countries)
 [![Coverage Status](https://coveralls.io/repos/github/DivineOmega/php-countries/badge.svg?branch=master)](https://coveralls.io/github/DivineOmega/php-countries?branch=master)
 [![StyleCI](https://github.styleci.io/repos/144559506/shield?branch=master)](https://github.styleci.io/repos/144559506)
 [![Packagist](https://img.shields.io/packagist/dt/divineomega/php-countries.svg)](https://packagist.org/packages/divineomega/php-countries/stats)
